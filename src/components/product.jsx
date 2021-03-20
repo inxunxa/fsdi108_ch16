@@ -8,7 +8,10 @@ class Product extends Component {
   render() {
     return (
       <div className="product">
-        <img src="https://picsum.photos/300/350"></img>
+        <img
+          className="product-image"
+          src="https://picsum.photos/300/350"
+        ></img>
 
         <label>Product Description here</label>
 
