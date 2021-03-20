@@ -24,15 +24,14 @@ class QuantityPicker extends Component {
   }
 
   increaseQuantity = () => {
-    // this.state.quantity = 999; <- DON'T modify state directly
     let current = this.state.quantity + 1; // read from the state
+
     this.setState({ quantity: current });
   };
 
   decreaseQuantity = () => {
     let current = this.state.quantity - 1;
     if (current > 0) {
-      // update the state only when current is greater than 0
       this.setState({ quantity: current });
     }
   };
