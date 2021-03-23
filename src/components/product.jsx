@@ -10,13 +10,13 @@ class Product extends Component {
       <div className="product">
         <img
           className="product-image"
-          src="https://picsum.photos/300/350"
+          src={"/images/products/" + this.props.data.image}
         ></img>
 
-        <label>Product Description here</label>
+        <label>{this.props.data.title}</label>
 
-        <label>$ Total</label>
-        <label>$ Price</label>
+        <label>Total: ${this.props.data.price}</label>
+        <label>Unit Price: ${this.props.data.price}</label>
 
         <QuantityPicker></QuantityPicker>
       </div>

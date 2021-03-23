@@ -1,27 +1,17 @@
-import './App.css';
-import Footer from './components/footer';
-import NavBar from './components/navBar';
+import Footer from "./components/footer";
+import NavBar from "./components/navBar";
+import Catalog from "./components/catalog";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'font-awesome/css/font-awesome.min.css';
-import Product from './components/product';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "font-awesome/css/font-awesome.min.css";
 
 function App() {
   return (
     <div className="App">
       <NavBar></NavBar>
-      
-      <h1>Hello there!</h1>
 
-     
-     <Product></Product>
-     <Product></Product>
-     <Product></Product>
-     <Product></Product>
-     <Product></Product>
-     <Product></Product>
-      
-
+      <Catalog></Catalog>
 
       <Footer></Footer>
     </div>
